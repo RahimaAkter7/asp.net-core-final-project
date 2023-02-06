@@ -1,0 +1,12 @@
+﻿@model Core_Auth.Models.pot
+
+<div> Select Pot Item</div>
+
+<div class="row form-group mt-2">
+    <div class="col-md-10">
+        @Html.DropDownListFor(x => x.potId, ViewBag.pots as SelectList, "--Select--", htmlAttributes: new { @class = "form-control" })
+    </div>
+    <div class="col-md-2">
+        <a class="btn btn-danger text-white" id="btnDelete">Delete</a>
+    </div>
+</div>
